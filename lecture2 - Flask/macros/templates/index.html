@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+<!-- 
+macros are like defining a funcion 
+
+{% macro name(parameter) %}
+	template html that the parameter can be plugged into
+{% endmacro %}
+-->
+{% macro error(message) %}
+    <div class="error">
+        {{ message }}
+    </div>
+{% endmacro %}
+
+{% block body %}
+
+    {{ error("There was a problem.") }}
+
+    {{ error("There was another problem.") }}
+
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+    First Page
+{% endblock %}
+
+{% block body %}
+    <form action="{{ url_for('hello') }}" method="post">
+        <input type="text" name="name" placeholder="Enter Your Name">
+        <button>Submit</button>
+    </form>
+{% endblock %}
+
+<!-- 
+method: the method of the http request (get/post/..)
+        get: used when requesting info from the server
+        post: used when submitting info to the server
+
+
+action: the route towhich form info are send when submitted
+ -->

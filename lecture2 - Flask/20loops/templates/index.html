@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Website!</title>
+    </head>
+    <body>
+        <h1>Names</h1>
+
+        <ul>
+            <!-- jinja syntax for looping over a passed in list and rendering html for all list items -->
+            {% for name in names %}
+                <li>{{ name }}</li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
