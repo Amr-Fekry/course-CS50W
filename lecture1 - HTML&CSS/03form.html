@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>My Webpage!</title>
+    </head>
+    <body>
+        <form>
+            <div>
+                <input type="text" name="name" placeholder="Name">
+                <input type="password" name="password" placeholder="Password">
+            </div>
+            <div>
+                Favorite Color?
+                <input type="radio" name="color" value="red">Red
+                <input type="radio" name="color" value="green">Green
+                <input type="radio" name="color" value="blue">Blue
+                <input type="radio" name="color" value="other">Other
+            </div>
+            <div>
+                <input list="countries" name="country" placeholder="Country">
+                <datalist id="countries"> <!--new in HTML5 similar in spirit to select-option but it doesn't restrict user to choose an option and offers autocomplete-->
+                    <option value="Egypt">
+                    <option value="KSA">
+                    <option value="USA">
+                    <option value="Germany">
+                    <option value="Japan">
+                </datalist>
+            </div>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>My Webpage!</title>
+        <style media="screen">
+            /*colon colon is called a psuedoelement, used to style specified parts of an element*/
+            a::before {
+                content: "\21d2 Clickhere: "; /*a hex value for a unicode symbol*/
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li><a href="#">one link</a></li>
+            <li><a href="#">another link</a></li>
+            <li><a href="#">a third link</a></li>
+        </ul>
+    </body>
+</html>

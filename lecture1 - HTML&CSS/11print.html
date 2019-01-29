@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>My Webpage!</title>
+        <style>
+        /*Media query is a specific way of assigning CSS to a particular HTML element on a particular type of media*/
+        /*type of media could be computers vs phones or appearance on screens vs printed out*/
+            /* Creating a media query (only apply the following styling in the particular situation of "printing") */
+            @media print {
+                .screen-only {
+                    display: none;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <p>This is a paragraph</p>
+        <p>This is another paragraph</p>
+        <p class="screen-only">This paragraph won't appear when you print this page!</p>
+    </body>
+</html>
