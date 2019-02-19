@@ -34,10 +34,17 @@ CREATE TABLE flights (
 -- CHECK (only allow a value in a specific range)
 
 
+-- altering a table after creating it
+ALTER TABLE table-name ADD CONSTRAINT constraint_name UNIQUE (column1-name, column2-name,..);
+-- or:
+ALTER TABLE table-name ADD UNIQUE (column1-name, column2-name,..);
 
 
+-- clear a table (removes all data, id counter continues)
+TRUNCATE TABLE table-name
 
-
+-- 	delete a table
+DROP TABLE table-name
 
 
 
